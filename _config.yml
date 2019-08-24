@@ -1,0 +1,31 @@
+url: https://therobotcarlson.github.io
+baseurl: /
+
+# Site settings
+title: Lucra Machina
+email: briancarlson6174@gmail.com
+description: Machine Intelligence for your wealth
+url: lucramachina.com
+
+collections:
+  - timeline
+  - products
+
+collections_dir: collections
+
+
+# Team names, titles and social links
+people:
+- name: Brian Carlson
+  pic: 1.png
+  social:
+    - title: github
+      url: http://github.com/therobotcarlson
+    - title: linkedin
+      url: https://www.linkedin.com/in/therobotcarlson/
+    - title: stack-overflow
+      url: https://stackoverflow.com/users/5603346/therobotcarlson
+
+# Build settings
+markdown: kramdown
+permalink: pretty
