@@ -4,8 +4,8 @@ subtitle: A tool for buying cryptocurrency for cheaper and selling it for more.
 layout: default
 modal-id: 3
 date: 2014-03-02
-image: verbum-usus.png
-thumbnail: verbum-usus2.png
+image: 
+thumbnail:
 alt: image-alt
 project-date: Complete #status
 client: Mathematica #used

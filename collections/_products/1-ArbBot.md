@@ -4,8 +4,8 @@ subtitle: Automated Advanced Arbitrage
 layout: default
 modal-id: 1
 date: 2015-01-01
-img: realitype.jpg
-thumbnail: realitype.jpg
+image: 
+thumbnail: 
 alt: image-alt
 project-date: Complete #status
 client: Unity, Oculus Rift, Kinect V2

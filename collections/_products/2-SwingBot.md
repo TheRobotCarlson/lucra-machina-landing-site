@@ -4,8 +4,8 @@ subtitle: A bot that follows trends in the market to maximize payout.
 layout: default
 modal-id: 2
 date: 2014-05-01
-image: fret3.png
-thumbnail: fret8.png
+image: 
+thumbnail:
 alt: image-alt
 project-date: Complete 
 client: Mathematica 
