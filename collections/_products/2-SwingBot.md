@@ -4,7 +4,7 @@ subtitle: A bot that follows trends in the market to maximize payout.
 layout: default
 modal-id: 2
 date: 2014-05-01
-image: 
+# img: 
 thumbnail:
 alt: image-alt
 project-date: Complete 

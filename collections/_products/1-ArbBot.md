@@ -4,7 +4,7 @@ subtitle: Automated Advanced Arbitrage
 layout: default
 modal-id: 1
 date: 2015-01-01
-image: 
+# img: 
 thumbnail: 
 alt: image-alt
 project-date: Complete #status

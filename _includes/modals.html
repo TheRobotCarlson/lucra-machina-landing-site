@@ -15,8 +15,11 @@
                             <h2>{{ item.title }}</h2>
                             <hr class="star-primary">
                             {% if item.img %}
-                            <img src="img/portfolio/{{ item.img }}" class="img-responsive img-centered" alt="{{ item.alt }}">
+                                <img src="img/project/{{ item.img }}" class="img-responsive img-centered" alt="{{ item.alt }}">
+                            {% else %}
+                                <img src="https://via.placeholder.com/250}" class="img-responsive img-centered" alt="">
                             {% endif %}
+                            
                             {% if item.vid %}
                             <video src="vid/{{item.vid}}" class="img-responsive img-centered" type="video/mp4" controls> </video>
                             {% endif %}
