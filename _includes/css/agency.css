@@ -945,3 +945,16 @@ body {
 .resume-button {
     font-size: 200%;
 }
+
+.portfolio-caption {
+    min-height: 183px;
+}
+
+img.img-responsive.img-centered {
+    max-height: 150px;
+    width: 100%;
+}
+
+.col-md-4.col-sm-6.portfolio-item {
+    min-height: 350px;
+}
