@@ -9,7 +9,8 @@ url: lucramachina.com
 
 collections:
   - timeline
-  - products
+  products:
+    output: true
 
 collections_dir: collections
 
