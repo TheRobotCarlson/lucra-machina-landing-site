@@ -8,7 +8,8 @@ description: Machine Intelligence for your wealth
 url: lucramachina.com
 
 collections:
-  - timeline
+  timeline:
+    output: false
   products:
     output: true
 
