@@ -3,7 +3,7 @@ title: Platform Creation
 subtitle: The beginnings of the platform
 date-range: Nov. 2013 - Sept. 2015
 img: crypto.png
-layout: default
+layout: main
 date: 2013-11-01
 project-url: https://github.com/TheRobotCarlson/fret
 
