@@ -950,7 +950,7 @@ body {
     min-height: 183px;
 }
 
-img.img-responsive.img-centered {
+img.img-responsive.img-centered.img-grid {
     max-height: 150px;
     width: 100%;
 }
