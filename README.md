@@ -1,2 +1,2 @@
-# lucramaxima
-Website for Lucra Maxima
+# lucram machina
+Website for Lucra Machina
