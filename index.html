@@ -1,13 +1,368 @@
-<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="">
+		<meta name="author" content="">
+
+    <title>Home</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
+    <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#000000">
+    <meta name="msapplication-TileColor" content="#000000">
+    <meta name="theme-color" content="#000000">
+
+		<!-- Bootstrap core CSS -->
+		<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+		<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/aos.css" rel="stylesheet">
+
+  </head>
+  <body>
+
+    <header>
+      <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+        <a class="navbar-brand" href="#"><img id="icon" src="img/lucra-machina-icon.svg" alt="Lucra Machina Icon">Lucra Machina</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#features">Features</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#team">Team</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#faq">FAQ</a>
+            </li>
+          </ul>
+		  <span class="navbar-text">
+		  <a href="#"><i class="fa fa-user-o white" aria-hidden="true"></i></a>
+		</span>
+        </div>
+      </nav>
+    </header>
+
+    <main role="main">
+      <div class="container-fluid home banner">
+          <img id="bannerImg" src="img/bg-5.jpg" alt="lexington skyline banner image">
+          <!--<video autoplay muted loop id="myVideo">
+            <source src="img/video3.mp4" type="video/mp4">
+          </video>-->
+        <div class="row">
+          <div class="col-lg-8 text-center" data-aos="fade-up" data-aos-duration="1500">
+            <!--<img src="img/lucra-machina-logo.svg" alt="Lucra Machina Logo">-->
+            <h1>We're Lucra Machina</h1>
+            <h2>Where crypto meets AI meets your portfolio</h2>
+            <!-- Button trigger modal -->
+            <button id="bannerBtn" type="button" class="btn btn-primary" data-toggle="modal" data-target="#mailchimpModal">
+                Sign up for updates!
+              </button>
+          </div>
+          <div class="col-lg-3 phone-banner" data-aos="fade-left" data-aos-duration="1500">
+            <img src="img/phone_white_right.png" alt="phone app">
+            <span class="clear"></span>
+          </div>
+        </div>
+      </div>
+        <!-- Modal -->
+        <div class="modal fade" id="mailchimpModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalCenterTitle">Sign up for updates!</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+                </div>
+                <div class="modal-body">
+                  <!-- Begin Mailchimp Signup Form -->
+                  <div id="mc_embed_signup">
+                    <form action="https://gmail.us3.list-manage.com/subscribe/post?u=3cf8c7869e33efab6c618d358&amp;id=5ebe712c75" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+                      <div id="mc_embed_signup_scroll">
+                        <div class="indicates-required"><span class="asterisk">*</span> indicates required</div>
+                        <div class="mc-field-group">
+                          <label for="mce-EMAIL">Email Address  <span class="asterisk">*</span></label>
+                          <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
+                        </div>
+                        <div class="mc-field-group">
+                          <label for="mce-FNAME">First Name </label>
+                          <input type="text" value="" name="FNAME" class="" id="mce-FNAME">
+                        </div>
+                        <div class="mc-field-group">
+                          <label for="mce-LNAME">Last Name </label>
+                          <input type="text" value="" name="LNAME" class="" id="mce-LNAME">
+                        </div>
+                        <div class="mc-field-group">
+                            <label for="mce-INVEST">Investment Interest in dollars ($)</label>
+                            <input type="number" name="INVEST" class="" value="" id="mce-INVEST">
+                        </div>
+                        <div id="mce-responses" class="clear">
+                          <div class="response" id="mce-error-response" style="display:none"></div>
+                          <div class="response" id="mce-success-response" style="display:none"></div>
+                        </div>
+                        
+                        <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                        <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_3cf8c7869e33efab6c618d358_5ebe712c75" tabindex="-1" value=""></div>
+                        <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button btn btn-secondary"></div>
+                      </div>
+                    </form>
+                  </div>
+                  <script type='text/javascript' src='https://s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script>
+                  <script type='text/javascript'>
+                    (function($) {
+                      window.fnames = new Array();
+                      window.ftypes = new Array();
+                      fnames[0] = 'EMAIL';
+                      ftypes[0] = 'email';
+                      fnames[1] = 'FNAME';
+                      ftypes[1] = 'text';
+                      fnames[2] = 'LNAME';
+                      ftypes[2] = 'text';
+                      fnames[3] = 'INVEST';
+                      ftypes[3] = 'number';
+                      fnames[4] = 'PHONE';
+                      ftypes[4] = 'phone';
+                    }(jQuery));
+                    var $mcj = jQuery.noConflict(true);
+                  </script>
+                  <!--End mc_embed_signup-->
+        
+                </div>
+        
+              </div>
+            </div>
+          </div>
+          <!-- end modal -->
+
+      <div id="features" class="container-fluid">
+        <div class="row">
+          <div class="col-lg-2"></div>
+          <div class="col-lg-8">
+		<!-- START THE FEATURETTES -->
+		<hr class="featurette-divider">
+		
+		<h1 class="text-center featurette-heading">Features</h1>
+		
+        <hr class="featurette-divider">
+
+        <div class="row featurette" data-aos="fade-right" data-aos-duration="1500">
+		  <div class="col-md-4 order-md-1">
+		  <a href="#one">
+            <img class="featurette-image img-fluid mx-auto" src="img/img1.jpg" style="width:100%;max-width: 300px;height: 200px;">
+			</a>
+			<a href="#_" class="lb" id="one">
+			  <img src="img/img1.jpg">
+			</a>
+          </div>
+          <div class="col-md-8 order-md-2">
+            <h2 class="featurette-heading">AI Automated Trading <span class="text-muted">Simple and Easy</span></h2>
+            <p class="lead">Using artificial intelligence, we choose the right time to buy and sell to make you money and reduce your risk. Our results show 70% more returns than our closest competitors.</p>
+            <p class="collapse multi-collapse lead" id="multiCollapseExample7">
+                Artificial intelligence is at the core of everything we do, allowing us to handle volatility in ways our competitors can't. Traditional quantitative strategies break down when the market starts acting wild. 
+            </p>
+            <p><button class="btn btn-secondary" type="button" data-toggle="collapse" data-target="#multiCollapseExample7" aria-expanded="false" aria-controls="multiCollapseExample7">Read more »</button></p>
+          </div>
+
+        </div>
+
+        <hr class="featurette-divider">
+	
+        <div class="row featurette" data-aos="fade-left" data-aos-duration="1500">
+		   <div class="col-md-4 order-md-1">
+			<a href="#two">
+            <img class="featurette-image img-fluid mx-auto" src="img/img2.jpg" style="height: 200px;">
+			</a>
+			<a href="#_" class="lb" id="two">
+			  <img src="img/img2.jpg">
+			</a>
+          </div>
+          <div class="col-md-8 order-md-2">
+            <h2 class="featurette-heading">Adjustable Risk <span class="text-muted"></span></h2>
+            <p class="lead">Never let your portfolio drop below an amount you're comfortable with. Our platform offers unprecedented liquidity, allowing you to exit at any time.</p>
+            <p class="collapse multi-collapse lead" id="multiCollapseExample5">
+              Something imporant to keep in mind when making financial decisions is how large the risk of loss of an investment might be. Sometimes it might make sense to "ride the dip" and come out on top during a volatile market event. Our AI is always watching the market, deciding when it needs to exit to keep you from losing money. 
+            </p>
+            <p><button class="btn btn-secondary" type="button" data-toggle="collapse" data-target="#multiCollapseExample5" aria-expanded="false" aria-controls="multiCollapseExample5">Read more »</button></p>
+          </div>
+        </div>
+
+        <hr class="featurette-divider">
+
+        <div class="row featurette" data-aos="fade-right" data-aos-duration="1500">
+		  <div class="col-md-4">
+			<a href="#three">
+				<img class="featurette-image img-fluid mx-auto" src="img/img3.jpg" style="height: 200px;">
+			</a>
+			<a href="#_" class="lb" id="three">
+			  <img src="img/img3.jpg">
+			</a>
+          </div>
+          <div class="col-md-8">
+            <h2 class="featurette-heading">Risk Sharing <span class="text-muted"></span></h2>
+            <p class="lead">Don't trust in our AI? That's fine. We'll share the risk and insure you.</p>
+            <p class="collapse multi-collapse lead" id="multiCollapseExample6">
+                For any 1% loss during the bad times in exchange for taking 1% more of your profits during the good times.
+            </p>
+            <p><button class="btn btn-secondary" type="button" data-toggle="collapse" data-target="#multiCollapseExample6" aria-expanded="false" aria-controls="multiCollapseExample6">Read more »</button></p>
+          </div>
+        </div>
+
+        <hr class="featurette-divider">
+
+        <!-- /END THE FEATURETTES -->	  
+    
+        </div>
+      </div>
+      </div>
+	  
+	  <div id="team" class="container-fluid marketing">
+      <div class="row">
+          <div class="col-lg-2"></div>
+      <div class="col-lg-8">
+	   <hr class="featurette-divider">
+		<h1 class="text-center featurette-heading">Team</h1>
+		
+        <hr class="featurette-divider">
+        <!-- Three columns of text below the carousel -->
+        <div class="row">
+          <div class="col-lg-5 teamMember" data-aos="fade-up" data-aos-delay="0" data-aos-duration="1000">
+            <img class="rounded-circle" src="img/brian-carlson-avatar.jpg" alt="Brian Carlson portrait" width="140" height="140">
+            <h3>Brian Carlson - CEO</h3>
+            <hr>
+            <p>Programmer by trade and it’s likely that you’ve interacted with software he’s worked on. He’s written code for physicists, psychologists, civil engineers, medical data researchers, 
+              federal court systems, jet engine designers, and data analytics for grocery chains. With an emphasis in algorithms, artificial intelligence, and machine learning, he’s made a living from finding patterns across disconnected fields and developing software around those common threads.</p>
+            <!--<p><a class="btn btn-secondary" href="#" role="button">View details »</a></p>-->
+          </div><!-- /.col-lg-4 -->
+          <div class="col-lg-2"></div>
+          <div class="col-lg-5 teamMember" data-aos="fade-up" data-aos-delay="250" data-aos-duration="1000">
+            <img class="rounded-circle" src="img/Megan-Reinhart-avatar.jpg" alt="Megan Reinhart portrait" width="140" height="140">
+            <h3>Megan Reinhart - COO</h3>
+            <hr>
+            <p>Mechanical engineer with a working background knowledge of crypto. Studied abroad at the world’s leading university in blockchain and cryptocurrency technology, University of Nicosia in Cyprus for a semester. 
+              They were the first university to accept tuition and other fees in bitcoin. That’s where I was first introduced to blockchain and developed an interest in the technology.</p>
+            <!--<p><a class="btn btn-secondary" href="#" role="button">View details »</a></p>-->
+          </div><!-- /.col-lg-4 -->
+          <!--<div class="col-lg-4" data-aos="fade-up" data-aos-delay="500" data-aos-duration="1000">
+            <img class="rounded-circle" src="img/avatar2.jpg" alt="Generic placeholder image" width="140" height="140">
+            <h3>John Doe</h3>
+            <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo.</p>
+            <p><a class="btn btn-secondary" href="#" role="button">View details »</a></p>
+          </div--><!-- /.col-lg-4 -->
+        
+        </div><!-- /.row -->
+
+
+        
+
+      
+      </div>
+    </div>
+    </div><!-- /.container -->
+
+    <div id="faq" class="container-fluid marketing">
+      <div class="row">
+        <div class="col-lg-1"></div>
+        <div class="col-lg-10">
+          <hr class="featurette-divider">
+          <h1 class="text-center featurette-heading">FAQ</h1>
+          <hr class="featurette-divider">
+          <div class="col-lg-12">
+
+            <div class="row" data-aos="fade-left" data-aos-duration="1500">
+              <div class="col-lg-6">
+                <button class="faq-title" type="button" data-toggle="collapse" data-target="#multiCollapseExample1" aria-expanded="false" aria-controls="multiCollapseExample1">Why should we trust you with our money? <i class="fa fa-plus"></i></button>
+                <div class="collapse multi-collapse" id="multiCollapseExample1">
+                  <div class="card card-body">
+                    If you have any doubts about the technology, just look at our CEO's <a href="www.linkedin/in/therobotcarlson">LinkedIn.</a> We have important partnerships in the works that we'll be able to go into further details once the press announcements are live. For now all we can say is that our accounts are FDIC insured and we're following all the rules and regulations laid out by the SEC and FINRA.
+                  </div>
+                </div>
+              </div>
+              
+              <div class="col-lg-6">
+                <button class="faq-title" type="button" data-toggle="collapse" data-target="#multiCollapseExample2" aria-expanded="false" aria-controls="multiCollapseExample2">How can I get started? <i class="fa fa-plus"></i></button>
+                <div class="collapse multi-collapse" id="multiCollapseExample2">
+                  <div class="card card-body">
+                    We're getting everything cleared by the government first! <a href="https://gmail.us3.list-manage.com/subscribe/post?u=3cf8c7869e33efab6c618d358&amp;id=5ebe712c75">Sign up to join and be on our list for early access.</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="row" data-aos="fade-right" data-aos-duration="1500">
+                <div class="col-lg-6">
+                  <button class="faq-title" type="button" data-toggle="collapse" data-target="#multiCollapseExample3" aria-expanded="false" aria-controls="multiCollapseExample3">How does Lucra Machina make money? <i class="fa fa-plus"></i></button>
+                  <div class="collapse multi-collapse" id="multiCollapseExample3">
+                    <div class="card card-body">
+                      We make money by taking a fraction of the profits we make you. This is variable, but we never take more than 30%. Before you get concerned about that number, remember that, even after our cut, we make you way more than you'd ever find in any other trading platforms.
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="col-lg-6">
+                  <button class="faq-title" type="button" data-toggle="collapse" data-target="#multiCollapseExample4" aria-expanded="false" aria-controls="multiCollapseExample4">What assets does Lucra Machina support? <i class="fa fa-plus"></i></button>
+                  <div class="collapse multi-collapse" id="multiCollapseExample4">
+                    <div class="card card-body">
+                      Currently we support the same assets that Voyager supports. List <a href="https://www.investvoyager.com/blog/list-of-crypto-assets-supported-on-voyager-app/">here.</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+          </div>
+
+
+        </div>
+      </div>
+    </div>
+
+
+      <!-- FOOTER -->
+      <footer class="container-fluid">
+        <div class="row">
+          <div class="col-lg-2"></div>
+          <div class="col-lg-8">
+            <p class="float-right"><a href="#">Back to top</a></p>
+            <p>© 2019 Lucra Machina</p>
+          </div>
+        <div>
+      </footer>
+    </main>
+<!--
+	<script>
+		(function() {
+			var vid = document.getElementById("myVideo");
+			vid.playbackRate = 0.6;
+		})();
+	</script>
+-->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <script src="js/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+
 <script>
-  window.location = "http://eepurl.com/gBya41";
-</script>
-<!-- <html>
-   <head>
-      <title>HTML Meta Tag</title>
-      <meta http-equiv = "refresh" content = "0; url = http://eepurl.com/gBya41" />
-   </head>
-   <body>
-      <p>Lucra Machina</p>
-   </body>
-</html> -->
+  $(document).ready(function(){
+    $(".faq-title").click(function(){
+      $(this).children().toggleClass("fa-plus");
+      $(this).children().toggleClass("fa-minus");
+    });
+  });
+  </script>
+
+  
+
+
+
+</body>
+</html>
